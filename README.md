@@ -35,19 +35,15 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 - [x] Resolve `NoBrokersAvailable` connection issue
 - [x] Remove or fix broken `consumer` service lacking a Dockerfile
 - [x] Add working consumer implementation + Dockerfile
-- [ ] Add automatic topic creation script (optional)
 
 ### 📦 Producer / Consumer
 - [x] Implement functional Kafka producer
 - [x] Implement Kafka consumer (standalone or Dockerized)
 - [x] Add error handling & retries
-- [ ] Add schema validation for producer events
-- [ ] Benchmark throughput (optional)
 
 ### 📊 Monitoring (Prometheus & Grafana)
 - [x] Include Prometheus and Grafana services in compose
 - [x] Configure Prometheus to scrape consumer metrics (xrootd_*)
-- [ ] Add Prometheus Kafka exporter
 - [x] Create Grafana dashboards for:
   - [x] Bytes transferred per site
   - [x] Failed transfers per site
@@ -57,9 +53,6 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 ### 📘 Documentation & Repo Quality
 - [x] Add README fixes for Windows + Docker Desktop
 - [x] Add troubleshooting section
-- [ ] Add full architecture diagram
-- [ ] Add contribution guidelines (optional)
-- [ ] Add CI workflow (GitHub Actions)
 
 
 
