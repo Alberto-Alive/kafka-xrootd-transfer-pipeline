@@ -40,12 +40,13 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 ### 📦 Producer / Consumer
 - [x] Implement functional Kafka producer
 - [x] Implement Kafka consumer (standalone or Dockerized)
-- [ ] Add schema validation for producer events
 - [x] Add error handling & retries
+- [ ] Add schema validation for producer events
 - [ ] Benchmark throughput (optional)
 
 ### 📊 Monitoring (Prometheus & Grafana)
 - [x] Include Prometheus and Grafana services in compose
+- [x] Configure Prometheus to scrape consumer metrics (xrootd_*)
 - [ ] Add Prometheus Kafka exporter
 - [ ] Create Grafana dashboards for:
   - [ ] Producer throughput
