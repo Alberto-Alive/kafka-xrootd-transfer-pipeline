@@ -34,14 +34,14 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 - [x] Start Zookeeper and Kafka via `docker-compose`
 - [x] Resolve `NoBrokersAvailable` connection issue
 - [x] Remove or fix broken `consumer` service lacking a Dockerfile
-- [ ] Add working consumer implementation + Dockerfile
+- [x] Add working consumer implementation + Dockerfile
 - [ ] Add automatic topic creation script (optional)
 
 ### 📦 Producer / Consumer
 - [x] Implement functional Kafka producer
-- [ ] Implement Kafka consumer (standalone or Dockerized)
+- [x] Implement Kafka consumer (standalone or Dockerized)
 - [ ] Add schema validation for producer events
-- [ ] Add error handling & retries
+- [x] Add error handling & retries
 - [ ] Benchmark throughput (optional)
 
 ### 📊 Monitoring (Prometheus & Grafana)
