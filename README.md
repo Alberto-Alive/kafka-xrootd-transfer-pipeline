@@ -48,10 +48,11 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 - [x] Include Prometheus and Grafana services in compose
 - [x] Configure Prometheus to scrape consumer metrics (xrootd_*)
 - [ ] Add Prometheus Kafka exporter
-- [ ] Create Grafana dashboards for:
-  - [ ] Producer throughput
-  - [ ] Consumer lag
-  - [ ] Broker health
+- [x] Create Grafana dashboards for:
+  - [x] Bytes transferred per site
+  - [x] Failed transfers per site
+  - [x] Throughput (bytes/s per site)
+
 
 ### 📘 Documentation & Repo Quality
 - [x] Add README fixes for Windows + Docker Desktop
@@ -60,3 +61,20 @@ Kafka–XRootD transfer pipeline. Tasks are marked completed as we implement the
 - [ ] Add contribution guidelines (optional)
 - [ ] Add CI workflow (GitHub Actions)
 
+
+
+## Grafana Screenshots
+
+Below are the three main Grafana panels built on top of the Prometheus metrics.
+
+**Bytes transferred per site**
+
+![Bytes transferred per site](monitoring/grafana/screenshots/bytes_per_site.png)
+
+**Failed transfers per site**
+
+![Failed transfers per site](monitoring/grafana/screenshots/failures_per_site.png)
+
+**Throughput (bytes/s per site)**
+
+![Throughput per site](monitoring/grafana/screenshots/throughput_per_site.png)
